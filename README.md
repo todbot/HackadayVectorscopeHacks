@@ -9,7 +9,8 @@
 Uses standard Raspberry Pi Pico build of CircuitPython with `gc9a01` driver in Community Bundle.
 
 * [fake_vectorscope1.py](./circuitpython/fake_vectorscope1.py)
-  -- using multiple `vectorio` objects to make the phospher trails, can't have too many.
+  -- ([video demo](https://mastodon.social/@todbot/111279891762130663))
+    using multiple `vectorio` objects to make the phospher trails, can't have too many.
 
 * [fake_vectorscope2_lissajous.py](./circuitpython/fake_vectorscope2_lissajous.py)
   -- ([video demo](https://mastodon.social/@todbot/111275574436711965))
@@ -20,8 +21,7 @@ Uses standard Raspberry Pi Pico build of CircuitPython with `gc9a01` driver in C
 Uses standard `arduino-pico` core with `Arduino_GFX` library to drive the display.
 
 * [fakey_vectorscope_lissajous.ino](./arduino/fakey_vectorscope_lissajous.ino)
-  -- ([video demo](https://mastodon.social/@todbot/111279891762130663))
-  pretty good looking trails, but they fight with the grid lines
+  --   pretty good looking trails, but they fight with the grid lines
 
 #### Micropython
 
