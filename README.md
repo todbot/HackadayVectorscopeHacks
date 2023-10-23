@@ -1,7 +1,6 @@
 # HackadayVectorscopeHacks
 
-![Vectorscope](docs/vectorscope_badge_photo1.jpg)
-![Vectorscope straight](docs/vectorscope_badge_straight.jpg)
+<img src="./docs/vectorscope_badge_photo1.jpg" width=500>
 
 ### Hacks so far
 
@@ -24,12 +23,16 @@ Uses standard `arduino-pico` core with `Arduino_GFX` library to drive the displa
 
 #### Micropython
 
-Uses UF2 from https://github.com/russhughes/gc9a01_mpy but it seems pretty unstable.
+Uses UF2 from https://github.com/russhughes/gc9a01_mpy but it seems pretty unstable,
+wiping out the entire flash contents and requiring a reinstall of Micropython.
 And the font mpy files provided do not work with the provided UF2.
 
-* [simple_test.py](./micropython/gc9a01_test.py)
+* [gc9a01_test.py](./micropython/gc9a01_test.py)
 
 
 ### Links:
 * [Hackaday Teaser](https://hackaday.com/2023/10/18/2023-hackaday-supercon-badge-welcome-to-the-vectorscope/)
 * [Hackaday Vectorscope repo](https://github.com/Hack-a-Day/Vectorscope)
+
+
+![Vectorscope straight](docs/vectorscope_badge_straight.jpg)
