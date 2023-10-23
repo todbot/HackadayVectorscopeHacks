@@ -9,11 +9,11 @@
 Uses standard Raspberry Pi Pico build of CircuitPython with `gc9a01` driver in Community Bundle.
 
 * [fake_vectorscope1.py](./circuitpython/fake_vectorscope1.py)
-  -- ([video demo](https://mastodon.social/@todbot/111279891762130663))
+  --  ([video demo](https://mastodon.social/@todbot/111275574436711965))
     using multiple `vectorio` objects to make the phospher trails, can't have too many.
 
 * [fake_vectorscope2_lissajous.py](./circuitpython/fake_vectorscope2_lissajous.py)
-  -- ([video demo](https://mastodon.social/@todbot/111275574436711965))
+  --  ([video demo](https://mastodon.social/@todbot/111279891762130663))
     drawing on `Bitmap` without trying to erase, looks pretty good but no fading trails
 
 #### Arduino
