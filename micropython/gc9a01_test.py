@@ -1,8 +1,15 @@
+# gc9a01_test.py -- fakey lissajous in Micropython
+# 21 Oct 2023 - @todbot / Tod Kurt
+# Uses Micropython UF2 from https://github.com/russhughes/gc9a01_mpy
+# but it seems pretty unstable, wiping out the entire flash contents
+# and requiring a reinstall of Micropython.
+# And the font mpy files provided do not work with the provided UF2.
+
 import random, math, time
 from machine import Pin, SPI
 import gc9a01
 
-import vga1_bold_16x32 as font
+#import vga1_bold_16x32 as font
 
 def draw_dot(tft, x,y,c):
     tft.pixel( x,y, c )
