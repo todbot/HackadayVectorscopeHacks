@@ -8,7 +8,7 @@
 Arduino_DataBus *bus = new Arduino_RPiPicoSPI(5 /* DC */, 1 /* CS */, 2 /* SCK */, 3 /* MOSI */, GFX_NOT_DEFINED /* MISO */);
 Arduino_GFX *gfx = new Arduino_GC9A01(bus, 4 /* RST */, 0 /* r */, true /* ips */ ); // IPS is set on GC9A01
 
-const int num_trails = 200;  // cannot go over 255 
+const int num_trails = 200;  // cannot go over 255
 const int change_millis = 5000;
 
 uint8_t r = 70; // radius of lissajous
@@ -77,7 +77,7 @@ void loop() {
   }
   gfx->endWrite();
 
-  if ((millis() - last_millis) > change_millis ) { 
+  if ((millis() - last_millis) > change_millis ) {
     last_millis = millis();
     //gfx->fillScreen(BLACK);
     a = 0.2 + 0.7*random(100)/100.0;
@@ -87,5 +87,3 @@ void loop() {
   // delay(30);
 
 }
-
-

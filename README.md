@@ -20,7 +20,7 @@ Uses standard Raspberry Pi Pico build of CircuitPython with `gc9a01` driver in C
 
 Uses standard `arduino-pico` core with `Arduino_GFX` library to drive the display.
 
-* [fakey_vectorscope_lissajous.ino](./arduino/fakey_vectorscope_lissajous.ino)
+* [fakey_vectorscope_lissajous.ino](./arduino/fakey_vectorscope_lissajous/fakey_vectorscope_lissajous.ino)
   -- ([video demo](https://mastodon.social/@todbot/111281415284194368))
     pretty good looking trails, but they fight with the grid lines
 
