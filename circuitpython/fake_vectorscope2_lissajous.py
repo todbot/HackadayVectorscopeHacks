@@ -17,13 +17,19 @@ change_time = 5
 
 dw, dh = 240,240  # display dimensions
 
-# wiring for QT Py, should work on any QT Py or XIAO board
-tft_clk  = board.SCK
-tft_mosi = board.MOSI
+# Wiring for Pico wired as 2023Supercon badge is wired
+tft_clk  = board.GP2
+tft_mosi = board.GP3
+tft_rst = board.GP4
+tft_dc  = board.GP5
+tft_cs  = board.GP1 # no, not wired up but display_bus requires it
 
-tft_rst = board.MISO
-tft_dc  = board.RX
-tft_cs  = board.TX
+# wiring for QT Py, should work on any QT Py or XIAO board
+# tft_clk  = board.SCK
+# tft_mosi = board.MOSI
+# tft_rst = board.MISO
+# tft_dc  = board.RX
+# tft_cs  = board.TX
 
 spi = busio.SPI(clock=tft_clk, MOSI=tft_mosi)
 display_bus = displayio.FourWire(spi, command=tft_dc, chip_select=tft_cs, reset=tft_rst, baudrate=60_000_000)
@@ -73,5 +79,3 @@ while True:
         a = random.uniform(0.2,0.9)
         b = random.uniform(0.2,0.9)
         print("new a,b %.2f %.2f" % (a,b))
-
-
