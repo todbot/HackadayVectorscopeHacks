@@ -111,7 +111,6 @@ tpalette.make_transparent(0)
 timage = displayio.TileGrid(tbitmap, pixel_shader=tpalette)
 main.append(timage) # shows the image
 
-
 # make bitmap we'll scribble lissajous on
 bitmap = displayio.Bitmap(dw,dh, len(pal))
 tg = displayio.TileGrid(bitmap, pixel_shader=pal)
@@ -134,12 +133,11 @@ while True:
     x = 120 + int(r * math.sin( a*phi ))
     y = 120 + int(r * math.cos( b*phi ))
 
-    c = 1  # bright green in the palette
-    bitmap[x,y] = c
+    bitmap[x,y] = 1  # bright green in the palette
 
-    time.sleep(0.001)
+    time.sleep(0.001)  # sets the "framerate" effectively
 
-    if  time.monotonic() - last_touchcheck_time > 0.03:
+    if time.monotonic() - last_touchcheck_time > 0.03:
         last_touchcheck_time = time.monotonic()
         pos = touchwheel.pos()
         if pos is not None:   # touched!
