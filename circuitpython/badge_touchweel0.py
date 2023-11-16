@@ -143,9 +143,9 @@ while True:
         if pos is not None:   # touched!
             #touch_pos = pos * 0.7 + 0.3 * touch_pos  # filter
             touch_pos = pos
-            a = 3.14 - (6.28/12) + touch_pos*6.28 # adjust for how touchwheel is mounted
-            dot.x = int(120 + 110*math.sin(a))
-            dot.y = int(120 + 110*math.cos(a))
+            p = 3.14 - (6.28/12) + touch_pos*6.28 # adjust for how touchwheel is mounted
+            dot.x = int(120 + 110*math.sin(p))
+            dot.y = int(120 + 110*math.cos(p))
 
     if time.monotonic() - last_time > change_time:
         last_time = time.monotonic()
